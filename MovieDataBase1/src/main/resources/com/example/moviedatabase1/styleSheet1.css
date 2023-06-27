@@ -1,0 +1,12 @@
+.back:hover{
+    -fx-background-color: aqua;
+
+}
+.front:hover{
+    -fx-background-color: gold;
+
+}
+.side:hover{
+    -fx-background-color: hotpink;
+}
+

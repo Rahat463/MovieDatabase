@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/marvel2.png); -fx-border-width: 10; -fx-border-color: purple;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.ClientController">
+   <children>
+      <TextField fx:id="productionCompany" layoutX="489.0" layoutY="487.0" prefHeight="30.0" prefWidth="426.0" promptText="Enter production Company" style="-fx-border-width: 5; -fx-border-color: silver; -fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.22612085938453674" green="0.2631579041481018" blue="0.2285899966955185" />
+               </color>
+            </InnerShadow>
+         </effect></TextField>
+      <Button layoutX="353.0" layoutY="601.0" mnemonicParsing="false" onAction="#onLoadClick" prefHeight="44.0" prefWidth="123.0" style="-fx-background-radius: 5; -fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="Log in" textFill="#0d9cbd">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="524.0" layoutY="601.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="44.0" prefWidth="123.0" style="-fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5; -fx-background-radius: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="EXIT" textFill="#18a2b5">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="217.0" layoutY="487.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="272.0" style="-fx-background-color: aqua; -fx-background-radius: 5; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 5;" text="Enter Production Company" textFill="#1430a6">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

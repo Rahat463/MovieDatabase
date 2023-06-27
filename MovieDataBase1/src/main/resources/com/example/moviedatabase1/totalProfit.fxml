@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/profit2.png);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.TotalProfitController">
+   <children>
+      <TextField fx:id="profitField" layoutX="461.0" layoutY="370.0" prefHeight="38.0" prefWidth="370.0" style="-fx-background-color: palegreen; -fx-border-width: 5; -fx-border-color: green; -fx-border-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="299.0" layoutY="370.0" mnemonicParsing="false" onAction="#onTotalProfitClick" prefHeight="50.0" prefWidth="162.0" style="-fx-background-radius: 5; -fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="Total Profit">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="521.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="38.0" prefWidth="106.0" style="-fx-background-radius: 5; -fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="Back">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

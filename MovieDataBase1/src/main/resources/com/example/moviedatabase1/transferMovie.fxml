@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/transfermovie.jpg);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.TransferMovieController">
+   <children>
+      <Button layoutX="375.0" layoutY="680.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="45.0" prefWidth="106.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="side" stylesheets="@styleSheet1.css" text="Back">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="62.0" prefHeight="54.0" prefWidth="330.0" style="-fx-background-color: hotpink; -fx-background-radius: 5; -fx-border-color: magenta; -fx-border-radius: 5; -fx-border-width: 5;" text="Transfer Movies " textFill="#1f2020">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="56.0" layoutY="561.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="243.0" style="-fx-background-color: hotpink; -fx-border-color: magenta; -fx-border-radius: 5; -fx-border-width: 5;" text="Enter Movie Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="56.0" layoutY="609.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="243.0" style="-fx-background-color: hotpink; -fx-background-radius: 5; -fx-border-color: magenta; -fx-border-radius: 5; -fx-border-width: 5;" text="New Production Company">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="522.0" prefHeight="30.0" prefWidth="370.0" style="-fx-background-color: hotpink; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 5; -fx-border-color: magenta;" text="Enter Informations to Transfer Movie">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newMovieName" layoutX="297.0" layoutY="561.0" prefHeight="45.0" prefWidth="363.0" style="-fx-border-color: magenta; -fx-background-radius: 5; -fx-border-width: 5; -fx-border-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="newProduction" layoutX="297.0" layoutY="609.0" prefHeight="45.0" prefWidth="363.0" style="-fx-background-radius: 5; -fx-border-color: magenta; -fx-border-width: 5; -fx-border-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="241.0" layoutY="680.0" mnemonicParsing="false" onAction="#onTransferClick" prefHeight="38.0" prefWidth="115.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="side" stylesheets="@styleSheet1.css" text="Transfer">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="182.0" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: hotpink; -fx-background-radius: 5; -fx-border-color: magenta; -fx-border-radius: 5; -fx-border-width: 5;" text="Own Movies List">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="58.0" layoutY="226.0" prefHeight="286.0" prefWidth="846.0" style="-fx-border-color: magenta; -fx-border-width: 5; -fx-border-radius: 10; -fx-background-color: hotpink; -fx-background-radius: 10;">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="93.19999933242798" text="Name" />
+            <TableColumn fx:id="yearCol" prefWidth="74.80000305175781" text="Release year" />
+            <TableColumn fx:id="g1Col" minWidth="0.0" prefWidth="59.199981689453125" text="Genre1" />
+            <TableColumn fx:id="g2Col" prefWidth="75.0" text="Genre2" />
+            <TableColumn fx:id="g3Col" prefWidth="75.0" text="Genre3" />
+            <TableColumn fx:id="timeCol" prefWidth="95.20001220703125" text="Running Time" />
+            <TableColumn fx:id="companyCol" prefWidth="144.4000244140625" text="Production Company " />
+            <TableColumn fx:id="budgetCol" minWidth="9.20001220703125" prefWidth="79.4000244140625" text="Budget" />
+            <TableColumn fx:id="revenueCol" prefWidth="133.60009765625" text="Revenue" />
+         </columns>
+      </TableView>
+      <Label fx:id="companyLabel" alignment="CENTER" layoutX="479.0" layoutY="62.0" prefHeight="54.0" prefWidth="394.0" style="-fx-background-color: hotpink; -fx-background-radius: 5; -fx-border-color: magenta; -fx-border-width: 5; -fx-border-radius: 5;">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

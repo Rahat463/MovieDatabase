@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/spider1.png);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.SearchingMostRecentMoviesController">
+   <children>
+      <TableView fx:id="table" layoutX="90.0" layoutY="294.0" prefHeight="286.0" prefWidth="846.0" style="-fx-background-color: orange;">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="93.19999933242798" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Name" />
+            <TableColumn fx:id="yearCol" prefWidth="86.39999389648438" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Release year" />
+            <TableColumn fx:id="g1Col" minWidth="0.0" prefWidth="57.60003662109375" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Genre1" />
+            <TableColumn fx:id="g2Col" prefWidth="66.39996337890625" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Genre2" />
+            <TableColumn fx:id="g3Col" prefWidth="75.0" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Genre3" />
+            <TableColumn fx:id="timeCol" prefWidth="95.20001220703125" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Running Time" />
+            <TableColumn fx:id="companyCol" prefWidth="144.4000244140625" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Production Company " />
+            <TableColumn fx:id="budgetCol" minWidth="9.20001220703125" prefWidth="84.79986572265625" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Budget" />
+            <TableColumn fx:id="revenueCol" prefWidth="139.99997558593748" style="-fx-border-width: 5; -fx-border-color: gray; -fx-background-color: white;" text="Revenue" />
+         </columns>
+      </TableView>
+      <Button layoutX="500.0" layoutY="619.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="34.0" prefWidth="102.0" style="-fx-background-radius: 5; -fx-border-width: 5; -fx-border-color: darkorange; -fx-border-radius: 5;" styleClass="front" stylesheets="@styleSheet1.css" text="Back">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="490.0" layoutY="214.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: darkorange; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="front" stylesheets="@styleSheet1.css" text="Search">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

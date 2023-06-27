@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/addmovie.png); -fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.AddMovieController">
+   <children>
+      <TextField fx:id="movieName" layoutX="405.0" layoutY="146.0" prefHeight="39.0" prefWidth="405.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 5; -fx-border-color: lightseagreen;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="500.0" layoutY="530.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="34.0" prefWidth="98.0" style="-fx-background-radius: 5; -fx-border-width: 5; -fx-border-radius: 5; -fx-border-color: silver;" styleClass="back" stylesheets="@styleSheet1.css" text="Back">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="245.0" layoutY="146.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-background-radius: 5; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5;" text="Enter Movie Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="245.0" layoutY="185.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-background-radius: 5; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5;" text="Release Year">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="246.0" layoutY="222.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-border-color: aqua; -fx-border-width: 5; -fx-border-radius: 5;" text="Genre1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="262.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5;" text="Genre2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="296.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5; -fx-background-radius: 5;" text="Genre3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="335.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5;" text="Running Time">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="246.0" layoutY="373.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-background-radius: 5; -fx-border-color: aqua; -fx-border-width: 5; -fx-background-radius: 5;" text="Budget">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="413.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="158.0" style="-fx-background-color: aquamarine; -fx-border-color: aqua; -fx-border-radius: 5; -fx-border-width: 5; -fx-background-radius: 5;" text="Revenue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="388.0" layoutY="530.0" mnemonicParsing="false" onAction="#onSubmitClick" prefHeight="45.0" prefWidth="98.0" style="-fx-border-color: silver; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="Submit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="734.0" layoutY="146.0" mnemonicParsing="false" onAction="#onVerifyClick" prefHeight="34.0" prefWidth="83.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="back" stylesheets="@styleSheet1.css" text="Verify">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="year" layoutX="405.0" layoutY="185.0" prefHeight="35.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-border-color: lightseagreen; -fx-border-width: 5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="g1" layoutX="403.0" layoutY="222.0" prefHeight="26.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-border-color: lightseagreen; -fx-border-radius: 5; -fx-border-width: 5; -fx-background-radius: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="g2" layoutX="403.0" layoutY="262.0" prefHeight="26.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-color: lightseagreen; -fx-border-radius: 5; -fx-border-width: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="g3" layoutX="403.0" layoutY="296.0" prefHeight="26.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-color: lightseagreen; -fx-border-radius: 5; -fx-border-width: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="time" layoutX="403.0" layoutY="335.0" prefHeight="26.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-color: lightseagreen; -fx-border-width: 5; -fx-border-radius: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="budget" layoutX="403.0" layoutY="373.0" prefHeight="26.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-color: lightseagreen; -fx-border-radius: 5; -fx-border-width: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="revenue" layoutX="403.0" layoutY="413.0" prefHeight="39.0" prefWidth="331.0" style="-fx-background-color: cyan; -fx-background-radius: 5; -fx-border-color: lightseagreen; -fx-border-width: 5; -fx-border-radius: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

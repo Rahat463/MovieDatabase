@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-image: url(com/example/moviedatabase1/hollywood1.png);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedatabase1.SearchingMoviesWithMaximumRevenueController">
+   <children>
+      <Button layoutX="409.0" layoutY="221.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="45.0" prefWidth="110.0" style="-fx-border-color: darkorange; -fx-border-width: 5; -fx-border-radius: 5;" styleClass="front" stylesheets="@styleSheet1.css" text="Search">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="66.0" layoutY="280.0" prefHeight="286.0" prefWidth="846.0" style="-fx-border-color: darkorange; -fx-border-width: 5; -fx-border-radius: 5; -fx-background-color: gold;">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="93.19999933242798" text="Name" />
+            <TableColumn fx:id="yearCol" prefWidth="74.80000305175781" text="Release year" />
+            <TableColumn fx:id="g1Col" minWidth="0.0" prefWidth="59.199981689453125" text="Genre1" />
+            <TableColumn fx:id="g2Col" prefWidth="75.0" text="Genre2" />
+            <TableColumn fx:id="g3Col" prefWidth="75.0" text="Genre3" />
+            <TableColumn fx:id="timeCol" prefWidth="95.20001220703125" text="Running Time" />
+            <TableColumn fx:id="companyCol" prefWidth="144.4000244140625" text="Production Company " />
+            <TableColumn fx:id="budgetCol" minWidth="9.20001220703125" prefWidth="79.4000244140625" text="Budget" />
+            <TableColumn fx:id="revenueCol" prefWidth="117.4000244140625" text="Revenue" />
+         </columns>
+      </TableView>
+      <Button layoutX="401.0" layoutY="601.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="40.0" prefWidth="98.0" style="-fx-border-color: darkorange; -fx-border-radius: 5; -fx-border-width: 5;" styleClass="front" stylesheets="@styleSheet1.css" text="Back">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
